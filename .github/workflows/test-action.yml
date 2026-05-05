@@ -8,6 +8,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Print System Info
         run: |
-          node -v
+          nod -v
           npm -v
           echo "System is live and authorized for SKINNERGUM."
