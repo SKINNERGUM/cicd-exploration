@@ -1,0 +1,13 @@
+name: System Check
+on: [push]
+jobs:
+  check-environment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Print System Info
+        run: |
+          node -v
+          npm -v
+          echo "System is live and authorized for SKINNERGUM."
